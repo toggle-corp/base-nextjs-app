@@ -1,0 +1,21 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .navbar {
+        background-color: var(--color-navbar-background);
+        padding: var(--spacing-large) var(--spacing-super-large);
+    }
+
+    .mainContent {
+        flex-grow: 1;
+        padding: var(--spacing-large) var(--spacing-super-large);
+    }
+
+    .footer {
+        background-color: var(--color-footer-background);
+        padding: var(--spacing-large) var(--spacing-super-large);
+        color: var(--color-text-white);
+    }
+}
