@@ -9,8 +9,25 @@
     }
 
     .mainContent {
+        display: flex;
         flex-grow: 1;
+        flex-wrap: wrap;
         padding: var(--spacing-large) var(--spacing-super-large);
+        gap: var(--spacing-large);
+
+        .card {
+            flex-basis: calc((100% / 3) - 2 * var(--spacing-large));
+            flex-grow: 1;
+
+            .imageContainer {
+                position: relative;
+                height: 20em;
+
+                .flowerImage {
+                    object-fit: cover;
+                }
+            }
+        }
     }
 
     .footer {

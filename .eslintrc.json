@@ -23,8 +23,6 @@
         "react/react-in-jsx-scope": "off",
         "react/require-default-props": "off",
 
-        "@next/next/no-img-element": "off",
-
         "postcss-modules/no-unused-class": "warn",
         "postcss-modules/no-undef-class": "warn"
     }
