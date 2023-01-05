@@ -31,7 +31,7 @@
     core-js-pure "^3.25.1"
     regenerator-runtime "^0.13.11"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.18.9":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.18.9", "@babel/runtime@^7.19.0":
   version "7.20.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.7.tgz#fcb41a5a70550e04a7b708037c7c32f7f356d8fd"
   integrity sha512-UF0tvkUtxwAgZ5W/KrkHf0Rn0fdnLDU9ScxBrEVNUprE/MzirjK4MJUX1/BVDv00Sv8cljtukVK1aky++X1SjQ==
@@ -328,6 +328,13 @@
   integrity sha512-4BAffykYOgO+5nzBWYwE3W90sBgLJoUPRWWcL8wlyiM8IB8ipJz3UMJ9KXQd1RKQXpKp8Tutn80HZtWsu2u76w==
   dependencies:
     defer-to-connect "^2.0.0"
+
+"@togglecorp/fujs@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@togglecorp/fujs/-/fujs-2.0.0.tgz#b1834326a173e568a226d956271b1b532b5f1f30"
+  integrity sha512-Fx5SF9kusbf35uT2WYlI6gdqqSL/e3JN4urAyB2O+jPz1VkG2I85VRqFxGjrg4m/ZZH+HRyGgLhSDn2V8LNdjA==
+  dependencies:
+    "@babel/runtime" "^7.19.0"
 
 "@types/cacheable-request@^6.0.1":
   version "6.0.3"

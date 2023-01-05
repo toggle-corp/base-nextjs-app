@@ -1,35 +1,32 @@
 :root {
     /* Constants  */
-    --multiplier: 1.2599;
+    --multiplier: 1.2599; /* Major third scale */
+
     --font-size-base: 1rem;
     --font-size-heading-base: 2rem;
     --spacing-base: 1.25rem;
 
+    @media screen and (max-width: 900px) {
+        --font-size-base: 0.85rem;
+        --font-size-heading-base: 1.25rem;
+        --spacing-base: 0.85rem;
+    }
+
     /* Colors */
-    --color-text-black: #313131;
-    --color-text-dark-gray: #7a7a7a;
-    --color-text-light-gray: #b3b3b3;
-    --color-text-white: #f7f7f7;
+    --color-text: #313131;
+    --color-text-light: #7a7a7a;
+    --color-text-on-dark: #f7f7f7;
+    --color-text-on-dark-light: #b3b3b3;
 
-    --color-surface-light : #ffffff;
-    --color-surface-medium: #ffbbbb;
-    --color-surface-dark: #000000;
+    --color-primary: #2b9990;
+    --color-secondary: #022154;
 
-    /* Text color */
-    --color-text: var(--color-text-black); /* black */
-    --color-text-light: var(--color-text-dark-gray); /* dark gray */
-    --color-text-on-dark: var(--color-text-white);
-    --color-text-on-dark-light: var(--color-text-light-gray);
-
-    /* Surface color */
-    --color-background: var(--color-surface-light);
-
-    --color-footer-background: var(--color-surface-dark);
-    --color-navbar-background: var(--color-surface-medium);
+    --color-background: #f5f5f5;
+    --color-foreground: #ffffff;
 
     /* Font weights */
-    --font-weight-light: 400;
-    --font-weight-normal: 400;
+    --font-weight-light: 200;
+    --font-weight-medium: 400;
     --font-weight-bold: 600;
 
     /* Font size */

@@ -1,7 +1,8 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
-import Head from 'next/head';
 import Image from 'next/image';
+
+import Page from 'components/Page';
 
 import flowersData from 'data/flowers.json';
 
@@ -24,44 +25,33 @@ function Home(props: Props) {
     } = props;
 
     return (
-        <div className={styles.page}>
-            <Head>
-                <title>
-                    Home
-                </title>
-            </Head>
-            <div className={styles.navbar}>
-                <h2>
-                    Flowers
-                </h2>
-            </div>
-            <div className={styles.mainContent}>
-                {flowers.map((flower) => (
-                    <div
-                        key={flower.id}
-                        className={styles.card}
-                    >
-                        <div className={styles.imageContainer}>
-                            <Image
-                                className={styles.flowerImage}
-                                alt={flower.name}
-                                src={flower.image}
-                                fill
-                            />
-                        </div>
-                        <h2>
-                            {flower.name}
-                        </h2>
-                        <div>
-                            {flower.description}
-                        </div>
+        <Page
+            pageTitle="Home"
+            className={styles.home}
+            contentClassName={styles.mainContent}
+        >
+            {flowers.map((flower) => (
+                <div
+                    key={flower.id}
+                    className={styles.card}
+                >
+                    <div className={styles.imageContainer}>
+                        <Image
+                            className={styles.flowerImage}
+                            alt={flower.name}
+                            src={flower.image}
+                            fill
+                        />
                     </div>
-                ))}
-            </div>
-            <div className={styles.footer}>
-                Made with 💜 and ☕
-            </div>
-        </div>
+                    <h3>
+                        {flower.name}
+                    </h3>
+                    <div className={styles.description}>
+                        {flower.description}
+                    </div>
+                </div>
+            ))}
+        </Page>
     );
 }
 

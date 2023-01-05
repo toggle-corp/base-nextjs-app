@@ -9,17 +9,14 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     margin: 0;
-    background-color: var(--color-surface-light);
+    background-color: var(--color-background);
     padding: 0;
-    height: 100vh;
-    overflow: auto;
-    color: var(--color-text-black);
-    font-family: 'Source Sans 3', sans-serif;
+    min-height: 100vh;
+    color: var(--color-text);
+    font-family: 'Noto Sans', sans-serif;
     font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-medium);
     scrollbar-gutter: stable;
 }
 

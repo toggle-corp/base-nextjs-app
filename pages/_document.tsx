@@ -23,7 +23,7 @@ function Document() {
                     crossOrigin="true"
                 />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;600&display=swap"
                     rel="stylesheet"
                 />
             </Head>
